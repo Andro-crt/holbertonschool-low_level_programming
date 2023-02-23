@@ -1,21 +1,18 @@
-#include <stdio.h>
+/*
+ * File: 2-mul.c
+ * Auth: Andronica Maswanganye
+ */
+
 #include "main.h"
 
 /**
- * _strchr - Entry point
- * @s: input
- * @c: input
- * Return: Always 0 (Success)
+ * mul - Multiples two integers.
+ * @a: The first integer to be multiplied.
+ * @b: The second integer to be multiplied.
+ *
+ * Return: The result of the multiplication.
  */
-char *_strchr(char *s, char c)
+int mul(int a, int b)
 {
-	int i;
-
-	for (i = 0; s[i] >= '\0'; i++)
-	{
-		if (s[i] == c)
-			return (s + i);
-	}
-
-	return (NULL);
+	return (a * b);
 }
